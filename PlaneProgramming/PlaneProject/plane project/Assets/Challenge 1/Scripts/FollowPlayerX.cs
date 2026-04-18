@@ -10,13 +10,13 @@ public class FollowPlayerX : MonoBehaviour
     void Start()
     {
         // Initialize the offset as the distance between the camera and plane at start
-        offset = transform.position - plane.transform.position;
+        offset = transform.position - Plane.transform.position;
     }
 
     void Update()
     {
         // Maintain the same offset as the plane moves
-        Vector3 targetPos = plane.transform.position + offset;
+        Vector3 targetPos = Plane.transform.position + offset;
         transform.position = Vector3.Lerp(transform.position, targetPos, 0.1f);
     }
 }

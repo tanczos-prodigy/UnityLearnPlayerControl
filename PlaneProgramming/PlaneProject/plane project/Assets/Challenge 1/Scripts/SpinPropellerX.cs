@@ -7,6 +7,6 @@ public class SpinPropeller : MonoBehaviour
     void Update()
     {
         // Rotate around local Z axis every frame
-        transform.Rotate(0f, spinSpeed * Time.deltaTime, 0f, Space.Self);
+        transform.Rotate(0f, 0f, spinSpeed * Time.deltaTime, Space.Self);
     }
 }
